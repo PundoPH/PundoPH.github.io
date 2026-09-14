@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pundo is an early project for Filipino women exploring legitimate overseas domestic work and what they want those years of work to build." />
+  <meta name="theme-color" content="#173f35" />
+  <title>Pundo | Work abroad should build something</title>
+
+  <style>
+    :root {
+      --ink: #17211d;
+      --muted: #5f6b66;
+      --line: #dfe6e2;
+      --paper: #fbfaf6;
+      --card: #ffffff;
+      --green: #173f35;
+      --green-soft: #e8f0ec;
+      --sand: #f3ede1;
+      --max: 760px;
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 10px;
+    }
+
+    .brand {
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: .16em;
+      color: var(--green);
+    }
+
+    .hero {
+      padding: 54px 0 42px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--green);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 680px;
+      font-size: clamp(2.55rem, 8vw, 5.2rem);
+      line-height: .98;
+      letter-spacing: -.055em;
+    }
+
+    .lead {
+      margin: 24px 0 0;
+      max-width: 660px;
+      font-size: clamp(1.05rem, 2.5vw, 1.28rem);
+      color: #35413c;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border: 1px solid var(--green);
+      border-radius: 999px;
+      background: var(--green);
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--green);
+    }
+
+    section {
+      padding: 32px 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.65rem, 4vw, 2.25rem);
+      line-height: 1.1;
+      letter-spacing: -.035em;
+    }
+
+    .copy {
+      margin: 0;
+      color: #3f4a45;
+      font-size: 1.02rem;
+    }
+
+    .mission {
+      padding: 30px;
+      border-radius: var(--radius);
+      background: var(--green);
+      color: white;
+    }
+
+    .mission .copy {
+      color: #eef4f1;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .step {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--green);
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .future {
+      margin-top: 22px;
+      padding: 22px;
+      border-radius: 16px;
+      background: var(--sand);
+    }
+
+    .future h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .future p {
+      margin: 0;
+      color: #4b514e;
+    }
+
+    .future-list {
+      margin: 14px 0 0;
+      padding-left: 20px;
+      color: #3f4642;
+    }
+
+    .future-list li + li { margin-top: 7px; }
+
+    .form-card {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+    }
+
+    .form-intro {
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+
+    form {
+      display: grid;
+      gap: 18px;
+    }
+
+    label,
+    legend {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 800;
+      color: #23302a;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #cfd9d4;
+      border-radius: 12px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      padding: 12px 13px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(23,63,53,.10);
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .check input {
+      width: auto;
+      margin: 0;
+    }
+
+    .small {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .submit {
+      width: 100%;
+      border: 0;
+    }
+
+    .trust {
+      margin-top: 14px;
+      font-size: .86rem;
+      color: var(--muted);
+    }
+
+    .progress {
+      margin: 18px 0 24px;
+    }
+
+    .progress-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-size: .84rem;
+      color: var(--muted);
+    }
+
+    .progress-bar {
+      height: 7px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: var(--green-soft);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 25%;
+      border-radius: 999px;
+      background: var(--green);
+      transition: width .2s ease;
+    }
+
+    .form-step { display: none; }
+    .form-step.active { display: grid; gap: 18px; }
+
+    .step-title {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      color: var(--green);
+    }
+
+    .field-help {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+
+    .form-nav {
+      display: flex;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .form-nav .button { flex: 1; }
+
+    .money-input {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      align-items: center;
+      border: 1px solid #cfd9d4;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .money-input span {
+      padding: 12px 13px;
+      border-right: 1px solid #cfd9d4;
+      color: var(--muted);
+      font-weight: 800;
+      background: #f7f9f8;
+    }
+
+    .money-input input {
+      border: 0;
+      border-radius: 0;
+      box-shadow: none !important;
+    }
+
+    footer {
+      padding: 32px 0 48px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 620px) {
+      .hero { padding-top: 38px; }
+      .steps, .checks { grid-template-columns: 1fr; }
+      .mission, .form-card { padding: 22px; }
+      .button { width: 100%; }
+      .form-nav { flex-direction: column-reverse; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">PUNDO</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">For Filipino domestic helpers in Singapore</p>
+        <h1>Your years abroad should build something.</h1>
+        <p class="lead">
+          You work, send money home, pay bills, help family, and deal with emergencies.
+          Pundo wants to understand what is actually left for you, and what you want those years in Singapore to build.
+        </p>
+        <div class="actions">
+          <a class="button" href="#talk">Tell us about you</a>
+          <a class="button secondary" href="https://wa.me/6580346968" target="_blank" rel="noopener">WhatsApp Pundo</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="mission">
+          <p class="eyebrow" style="color:#dfeee8;">Why Pundo exists</p>
+          <h2>You work hard for other people and for your family. We also want to know what you are building for yourself.</h2>
+          <p class="copy">
+            Domestic work is real work. Pundo is starting with Filipino helpers already working in Singapore.
+            We want to understand the real numbers behind the work: salary, remittance, debt, savings, emergencies,
+            and what you want to have after years of working abroad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">What we are trying to learn</p>
+        <h2>Not “would this be nice?” We want to know what is actually happening.</h2>
+        <p class="copy">
+          We are not starting with a list of services and asking you to say yes. We are starting with your real experience in Singapore.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <strong>Your work</strong>
+            <p>How long you have worked here, how many employers you have had, and what work you actually do.</p>
+          </div>
+          <div class="step">
+            <strong>Your money</strong>
+            <p>Salary, how much goes home, what remains, debt, savings, and what happens when an emergency comes.</p>
+          </div>
+          <div class="step">
+            <strong>Your costs</strong>
+            <p>How you send money home and what helpers in Singapore may be paying too much for.</p>
+          </div>
+          <div class="step">
+            <strong>Your future</strong>
+            <p>What you want after 3 to 5 more years of work, and what would actually help you get there.</p>
+          </div>
+        </div>
+
+        <div class="future">
+          <h3>What Pundo may test later</h3>
+          <p>Only if helpers tell us the problem is real. These are not services we already offer.</p>
+          <ul class="future-list">
+            <li>Finding the better remittance rate and lower fee when helpers send money home</li>
+            <li>Group pricing for medical care or other things helpers already pay for</li>
+            <li>A simple way to put money aside toward a house, land, business, or another goal</li>
+            <li>Other shared services where helpers can get a better deal by acting together</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="talk">
+      <div class="wrap">
+        <div class="form-card">
+          <p class="eyebrow">For helpers in Singapore</p>
+          <h2>Tell us what the work really looks like for you.</h2>
+          <p class="form-intro">
+            Approximate numbers are okay. We are trying to understand the real situation, not judge how you use your money.
+            At the end, WhatsApp will open with your answers. Nothing is sent until you choose to send it.
+          </p>
+
+          <div class="progress" aria-hidden="true">
+            <div class="progress-top">
+              <span id="progressLabel">1 of 4 · Your work</span>
+              <span id="progressPercent">25%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+
+          <form id="helperForm">
+            <div class="form-step active" data-step="0">
+              <h3 class="step-title">First, your actual work in Singapore.</h3>
+
+              <div>
+                <label for="name">What should we call you?</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+
+              <div>
+                <label for="years">How long have you been working as a domestic helper in Singapore?</label>
+                <select id="years" name="years" required>
+                  <option value="">Choose one</option>
+                  <option>Less than 1 year</option>
+                  <option>1–2 years</option>
+                  <option>3–5 years</option>
+                  <option>6–10 years</option>
+                  <option>More than 10 years</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="employers">How many employers have you worked for in Singapore?</label>
+                <input id="employers" name="employers" type="number" min="1" inputmode="numeric" required />
+              </div>
+
+              <fieldset>
+                <legend>What do you actually do in your current job?</legend>
+                <div class="checks">
+                  <label class="check"><input type="checkbox" name="work" value="Cleaning"> Cleaning</label>
+                  <label class="check"><input type="checkbox" name="work" value="Cooking"> Cooking</label>
+                  <label class="check"><input type="checkbox" name="work" value="Babies"> Babies</label>
+                  <label class="check"><input type="checkbox" name="work" value="Children"> Children</label>
+                  <label class="check"><input type="checkbox" name="work" value="Elder care"> Elder care</label>
+                  <label class="check"><input type="checkbox" name="work" value="Disabled care"> Disabled care</label>
+                  <label class="check"><input type="checkbox" name="work" value="Pets"> Pets</label>
+                  <label class="check"><input type="checkbox" name="work" value="Grocery / errands"> Grocery / errands</label>
+                </div>
+              </fieldset>
+
+              <div>
+                <label for="strongest">Which part of the job are you best at?</label>
+                <input id="strongest" name="strongest" placeholder="Example: cooking, caring for an elderly person, newborn care..." required />
+              </div>
+
+              <div class="form-nav">
+                <button class="button" type="button" data-next>Next: Your money</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="1">
+              <h3 class="step-title">Now the money. Think about a normal month.</h3>
+
+              <div>
+                <label for="salary">How much do you usually receive in a normal month?</label>
+                <div class="money-input">
+                  <span>SGD</span>
+                  <input id="salary" name="salary" type="number" min="0" step="1" inputmode="decimal" placeholder="Example: 750" required />
+                </div>
+                <p class="field-help">Include your normal monthly pay. Approximate is okay.</p>
+              </div>
+
+              <div>
+                <label for="remittance">Last month, about how much did you send to the Philippines?</label>
+                <div class="money-input">
+                  <span>SGD</span>
+                  <input id="remittance" name="remittance" type="number" min="0" step="1" inputmode="decimal" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="left">After sending money home and paying your own expenses, how much was actually left for you?</label>
+                <select id="left" name="left" required>
+                  <option value="">Choose one</option>
+                  <option>Nothing</option>
+                  <option>Less than S$100</option>
+                  <option>S$100–300</option>
+                  <option>S$301–500</option>
+                  <option>More than S$500</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="debt">Do you still owe money right now?</label>
+                <select id="debt" name="debt" required>
+                  <option value="">Choose one</option>
+                  <option>No</option>
+                  <option>Yes</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="debtDetail">If yes, what is the debt for and about how much is left? <span style="font-weight:500;color:#6d7772;">(optional if no debt)</span></label>
+                <textarea id="debtDetail" name="debtDetail" placeholder="Example: S$1,200 family emergency loan, house loan, agency loan..."></textarea>
+              </div>
+
+              <div>
+                <label for="savings">About how much do you have saved for yourself right now?</label>
+                <select id="savings" name="savings" required>
+                  <option value="">Choose one</option>
+                  <option>Nothing yet</option>
+                  <option>Less than S$500</option>
+                  <option>S$500–1,999</option>
+                  <option>S$2,000–4,999</option>
+                  <option>S$5,000–9,999</option>
+                  <option>S$10,000 or more</option>
+                  <option>I prefer not to say</option>
+                </select>
+              </div>
+
+              <div class="form-nav">
+                <button class="button secondary" type="button" data-back>Back</button>
+                <button class="button" type="button" data-next>Next: Where money goes</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="2">
+              <h3 class="step-title">Where does money get lost or become difficult?</h3>
+
+              <div>
+                <label for="sendMethod">What do you normally use to send money to the Philippines?</label>
+                <input id="sendMethod" name="sendMethod" placeholder="Example: Wise, Remitly, Western Union, bank..." required />
+              </div>
+
+              <div>
+                <label for="compare">Before you send, do you usually compare the exchange rate and fee?</label>
+                <select id="compare" name="compare" required>
+                  <option value="">Choose one</option>
+                  <option>Yes, almost every time</option>
+                  <option>Sometimes</option>
+                  <option>No, I normally use the same service</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="emergency">Think about the last big unexpected expense you had. What happened?</label>
+                <textarea id="emergency" name="emergency" placeholder="What was it for? Did you use savings, borrow, ask for salary advance, or ask family?" required></textarea>
+              </div>
+
+              <div>
+                <label for="overpay">What is one thing you regularly pay for in Singapore that you think helpers are paying too much for?</label>
+                <textarea id="overpay" name="overpay" placeholder="Don't choose from our ideas. Tell us what you actually notice." required></textarea>
+              </div>
+
+              <div class="form-nav">
+                <button class="button secondary" type="button" data-back>Back</button>
+                <button class="button" type="button" data-next>Next: Your future</button>
+              </div>
+            </div>
+
+            <div class="form-step" data-step="3">
+              <h3 class="step-title">After all these years of work, what do you want to have?</h3>
+
+              <div>
+                <label for="goal">If you keep working in Singapore for another 3–5 years, what do you want to have at the end that you do not have today?</label>
+                <textarea id="goal" name="goal" placeholder="Example: a house, land, business, savings, no debt, education for my children..." required></textarea>
+              </div>
+
+              <div>
+                <label for="closer">What have you already been able to build or save toward that goal?</label>
+                <textarea id="closer" name="closer" placeholder="Tell us what you already have today, even if you are still far from the goal." required></textarea>
+              </div>
+
+              <div>
+                <label for="oneChange">If you could change ONE thing about how helpers manage money or life in Singapore, what would you change first?</label>
+                <textarea id="oneChange" name="oneChange" required></textarea>
+              </div>
+
+              <div>
+                <label for="joinFor">If Pundo organized helpers together to get a better deal or service, what would you actually join for?</label>
+                <textarea id="joinFor" name="joinFor" placeholder="What problem would need to be solved for you to actually use it?" required></textarea>
+              </div>
+
+              <div>
+                <label for="worthIt">What would make it worth joining for you?</label>
+                <textarea id="worthIt" name="worthIt" placeholder="Example: save at least S$20 each month, better exchange rate, lower medical cost..." required></textarea>
+              </div>
+
+              <div class="form-nav">
+                <button class="button secondary" type="button" data-back>Back</button>
+                <button class="button submit" type="submit">Continue on WhatsApp</button>
+              </div>
+
+              <p class="trust">
+                Pundo is still being tested. This is research with Filipino helpers in Singapore, not a job application.
+                This page does not save your answers. WhatsApp opens with the answers first, and you decide whether to send them.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>PUNDO</strong><br />
+      Starting with Filipino domestic helpers already working in Singapore.
+    </div>
+  </footer>
+
+  <script>
+    const WHATSAPP_NUMBER = "6580346968";
+    const steps = [...document.querySelectorAll(".form-step")];
+    const labels = ["Your work", "Your money", "Where money goes", "Your future"];
+    let currentStep = 0;
+
+    function showStep(index) {
+      currentStep = index;
+      steps.forEach((step, i) => step.classList.toggle("active", i === index));
+
+      const percent = Math.round(((index + 1) / steps.length) * 100);
+      document.getElementById("progressFill").style.width = percent + "%";
+      document.getElementById("progressLabel").textContent = `${index + 1} of ${steps.length} · ${labels[index]}`;
+      document.getElementById("progressPercent").textContent = percent + "%";
+
+      document.getElementById("talk").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function validateCurrentStep() {
+      const required = [...steps[currentStep].querySelectorAll("[required]")];
+      for (const field of required) {
+        if (!field.checkValidity()) {
+          field.reportValidity();
+          return false;
+        }
+      }
+
+      if (currentStep === 0) {
+        const checkedWork = document.querySelectorAll('input[name="work"]:checked');
+        if (!checkedWork.length) {
+          alert("Please choose at least one type of work you currently do.");
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    document.querySelectorAll("[data-next]").forEach(button => {
+      button.addEventListener("click", () => {
+        if (validateCurrentStep() && currentStep < steps.length - 1) {
+          showStep(currentStep + 1);
+        }
+      });
+    });
+
+    document.querySelectorAll("[data-back]").forEach(button => {
+      button.addEventListener("click", () => {
+        if (currentStep > 0) showStep(currentStep - 1);
+      });
+    });
+
+    document.getElementById("helperForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!validateCurrentStep()) return;
+
+      const form = event.currentTarget;
+      const work = [...form.querySelectorAll('input[name="work"]:checked')]
+        .map(input => input.value)
+        .join(", ");
+
+      const value = name => form.elements[name].value.trim();
+
+      const lines = [
+        "Hi Pundo, I answered the Singapore helper form.",
+        "",
+        "ABOUT MY WORK",
+        "Name: " + value("name"),
+        "Years working as a helper in Singapore: " + value("years"),
+        "Number of employers in Singapore: " + value("employers"),
+        "Current work: " + work,
+        "What I am best at: " + value("strongest"),
+        "",
+        "MY MONEY",
+        "Normal monthly pay: S$" + value("salary"),
+        "Sent to the Philippines last month: S$" + value("remittance"),
+        "Left after remittance and my expenses: " + value("left"),
+        "Do I owe money now?: " + value("debt"),
+        "Debt details: " + (value("debtDetail") || "None given"),
+        "Savings for myself now: " + value("savings"),
+        "",
+        "WHERE MONEY GOES",
+        "How I send money home: " + value("sendMethod"),
+        "Do I compare rate and fee?: " + value("compare"),
+        "Last big unexpected expense: " + value("emergency"),
+        "Something helpers pay too much for: " + value("overpay"),
+        "",
+        "WHAT I AM BUILDING",
+        "What I want after another 3–5 years: " + value("goal"),
+        "What I have already built/saved toward it: " + value("closer"),
+        "One thing I would change first: " + value("oneChange"),
+        "What I would actually join Pundo for: " + value("joinFor"),
+        "What would make it worth joining: " + value("worthIt")
+      ];
+
+      const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+      window.location.href = url;
+    });
+  </script>
+</body>
+</html>
