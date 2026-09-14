@@ -322,6 +322,14 @@
       font-size: .84rem;
     }
 
+    .translation {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: .88rem;
+      font-weight: 500;
+    }
+
     .form-nav {
       display: flex;
       gap: 10px;
@@ -396,7 +404,7 @@
       <div class="wrap">
         <div class="mission">
           <p class="eyebrow" style="color:#dfeee8;">Why Pundo exists</p>
-          <h2>You work hard for other people and for your family. We also want to know what you are building for yourself.</h2>
+          <h2>You send money home every month. After years of doing that, what do you actually have left for yourself?</h2>
           <p class="copy">
             Domestic work is real work. Pundo is starting with Filipino helpers already working in Singapore.
             We want to understand the real numbers behind the work: salary, remittance, debt, savings, emergencies,
@@ -456,6 +464,14 @@
             At the end, WhatsApp will open with your answers. Nothing is sent until you choose to send it.
           </p>
 
+
+          <div class="future" style="margin-top:16px;">
+            <strong>Privacy note</strong>
+            <p style="margin:6px 0 0;">
+              Please do not share your bank account number, card details, passwords, OTPs, passport/FIN numbers, or other private information in this form.
+            </p>
+          </div>
+
           <div class="progress" aria-hidden="true">
             <div class="progress-top">
               <span id="progressLabel">1 of 4 · Your work</span>
@@ -469,12 +485,12 @@
               <h3 class="step-title">First, your actual work in Singapore.</h3>
 
               <div>
-                <label for="name">What should we call you?</label>
+                <label for="name">What should we call you?<span class="translation">(Anong gusto mong itawag namin sa'yo?)</span></label>
                 <input id="name" name="name" autocomplete="name" required />
               </div>
 
               <div>
-                <label for="years">How long have you been working as a domestic helper in Singapore?</label>
+                <label for="years">How long have you been working as a domestic helper in Singapore?<span class="translation">(Gaano ka na katagal nagtatrabaho bilang helper dito sa Singapore?)</span></label>
                 <select id="years" name="years" required>
                   <option value="">Choose one</option>
                   <option>Less than 1 year</option>
@@ -486,12 +502,12 @@
               </div>
 
               <div>
-                <label for="employers">How many employers have you worked for in Singapore?</label>
+                <label for="employers">How many employers have you worked for in Singapore?<span class="translation">(Ilang employer na ang napagtrabahuan mo dito sa Singapore?)</span></label>
                 <input id="employers" name="employers" type="number" min="1" inputmode="numeric" required />
               </div>
 
               <fieldset>
-                <legend>What do you actually do in your current job?</legend>
+                <legend>What do you actually do in your current job?<span class="translation">(Ano-ano talaga ang ginagawa mo sa current work mo?)</span></legend>
                 <div class="checks">
                   <label class="check"><input type="checkbox" name="work" value="Cleaning"> Cleaning</label>
                   <label class="check"><input type="checkbox" name="work" value="Cooking"> Cooking</label>
@@ -505,8 +521,8 @@
               </fieldset>
 
               <div>
-                <label for="strongest">Which part of the job are you best at?</label>
-                <input id="strongest" name="strongest" placeholder="Example: cooking, caring for an elderly person, newborn care..." required />
+                <label for="strongest">What part of your work do employers usually rely on you for the most?<span class="translation">(Sa anong part ng work ka pinaka-inaasahan ng employer mo?)</span></label>
+                <input id="strongest" name="strongest" placeholder="Example: cooking every day, taking care of Ah Ma, newborn care..." required />
               </div>
 
               <div class="form-nav">
@@ -518,7 +534,7 @@
               <h3 class="step-title">Now the money. Think about a normal month.</h3>
 
               <div>
-                <label for="salary">How much do you usually receive in a normal month?</label>
+                <label for="salary">How much do you usually receive in a normal month?<span class="translation">(Magkano usually ang natatanggap mong sweldo sa isang normal na buwan?)</span></label>
                 <div class="money-input">
                   <span>SGD</span>
                   <input id="salary" name="salary" type="number" min="0" step="1" inputmode="decimal" placeholder="Example: 750" required />
@@ -527,7 +543,7 @@
               </div>
 
               <div>
-                <label for="remittance">Last month, about how much did you send to the Philippines?</label>
+                <label for="remittance">Last month, about how much did you send to the Philippines?<span class="translation">(Noong last month, mga magkano ang pinadala mo sa Pilipinas?)</span></label>
                 <div class="money-input">
                   <span>SGD</span>
                   <input id="remittance" name="remittance" type="number" min="0" step="1" inputmode="decimal" required />
@@ -535,7 +551,7 @@
               </div>
 
               <div>
-                <label for="left">After sending money home and paying your own expenses, how much was actually left for you?</label>
+                <label for="left">After sending money home and paying your own expenses, how much was actually left for you?<span class="translation">(Pagkatapos mong magpadala at bayaran ang sarili mong gastos, magkano talaga ang natira para sa'yo?)</span></label>
                 <select id="left" name="left" required>
                   <option value="">Choose one</option>
                   <option>Nothing</option>
@@ -547,7 +563,7 @@
               </div>
 
               <div>
-                <label for="debt">Do you still owe money right now?</label>
+                <label for="debt">Do you still owe money right now?<span class="translation">(May utang ka pa bang binabayaran ngayon?)</span></label>
                 <select id="debt" name="debt" required>
                   <option value="">Choose one</option>
                   <option>No</option>
@@ -556,12 +572,12 @@
               </div>
 
               <div>
-                <label for="debtDetail">If yes, what is the debt for and about how much is left? <span style="font-weight:500;color:#6d7772;">(optional if no debt)</span></label>
+                <label for="debtDetail">If yes, what is the debt for and about how much is left?<span class="translation">(Kung meron, para saan ang utang at mga magkano pa ang natitira?)</span> <span style="font-weight:500;color:#6d7772;">(optional if no debt)</span></label>
                 <textarea id="debtDetail" name="debtDetail" placeholder="Example: S$1,200 family emergency loan, house loan, agency loan..."></textarea>
               </div>
 
               <div>
-                <label for="savings">About how much do you have saved for yourself right now?</label>
+                <label for="savings">About how much do you have saved for yourself right now?<span class="translation">(Mga magkano ang naipon mo para sa sarili mo ngayon?)</span></label>
                 <select id="savings" name="savings" required>
                   <option value="">Choose one</option>
                   <option>Nothing yet</option>
@@ -584,12 +600,12 @@
               <h3 class="step-title">Where does money get lost or become difficult?</h3>
 
               <div>
-                <label for="sendMethod">What do you normally use to send money to the Philippines?</label>
+                <label for="sendMethod">What do you normally use to send money to the Philippines?<span class="translation">(Ano usually ang gamit mo para magpadala ng pera sa Pilipinas?)</span></label>
                 <input id="sendMethod" name="sendMethod" placeholder="Example: Wise, Remitly, Western Union, bank..." required />
               </div>
 
               <div>
-                <label for="compare">Before you send, do you usually compare the exchange rate and fee?</label>
+                <label for="compare">Before you send, do you usually compare the exchange rate and fee?<span class="translation">(Bago ka magpadala, kino-compare mo ba ang exchange rate at fee?)</span></label>
                 <select id="compare" name="compare" required>
                   <option value="">Choose one</option>
                   <option>Yes, almost every time</option>
@@ -599,13 +615,13 @@
               </div>
 
               <div>
-                <label for="emergency">Think about the last big unexpected expense you had. What happened?</label>
+                <label for="emergency">Think about the last big unexpected expense you had. What happened?<span class="translation">(Isipin mo yung huling malaking biglaang gastos mo. Ano ang nangyari at saan ka kumuha ng pambayad?)</span></label>
                 <textarea id="emergency" name="emergency" placeholder="What was it for? Did you use savings, borrow, ask for salary advance, or ask family?" required></textarea>
               </div>
 
               <div>
-                <label for="overpay">What is one thing you regularly pay for in Singapore that you think helpers are paying too much for?</label>
-                <textarea id="overpay" name="overpay" placeholder="Don't choose from our ideas. Tell us what you actually notice." required></textarea>
+                <label for="overpay">What was the last thing you paid for in Singapore that felt expensive? What was it and how much did you pay?<span class="translation">(Ano yung huling binayaran mo dito na feeling mo ang mahal? Ano 'yon at magkano ang binayaran mo?)</span></label>
+                <textarea id="overpay" name="overpay" placeholder="Example: clinic visit S$45, remittance fee S$8, phone load S$20..." required></textarea>
               </div>
 
               <div class="form-nav">
@@ -618,28 +634,28 @@
               <h3 class="step-title">After all these years of work, what do you want to have?</h3>
 
               <div>
-                <label for="goal">If you keep working in Singapore for another 3–5 years, what do you want to have at the end that you do not have today?</label>
-                <textarea id="goal" name="goal" placeholder="Example: a house, land, business, savings, no debt, education for my children..." required></textarea>
+                <label for="goal">What is the biggest thing you are trying to save for right now, and about how much money do you still need?<span class="translation">(Ano yung pinakamalaking pinag-iipunan mo ngayon, at mga magkano pa ang kailangan mo?)</span></label>
+                <textarea id="goal" name="goal" placeholder="Example: house down payment, land, business capital, school fees, debt..." required></textarea>
               </div>
 
               <div>
-                <label for="closer">What have you already been able to build or save toward that goal?</label>
-                <textarea id="closer" name="closer" placeholder="Tell us what you already have today, even if you are still far from the goal." required></textarea>
+                <label for="closer">Because of working in Singapore, what do you already have today that you did not have before?<span class="translation">(Dahil sa pagtatrabaho mo dito sa Singapore, ano na ang meron ka ngayon na wala ka dati?)</span></label>
+                <textarea id="closer" name="closer" placeholder="Example: savings, house payments, land, a small business, paid-off debt, children's school fees..." required></textarea>
               </div>
 
               <div>
-                <label for="oneChange">If you could change ONE thing about how helpers manage money or life in Singapore, what would you change first?</label>
-                <textarea id="oneChange" name="oneChange" required></textarea>
+                <label for="oneChange">In the last 3 months, what money problem stressed you the most? What happened?<span class="translation">(Sa last 3 months, anong problema sa pera ang pinaka-stressful para sa'yo? Ano ang nangyari?)</span></label>
+                <textarea id="oneChange" name="oneChange" placeholder="Tell us what happened, not what you wish existed." required></textarea>
               </div>
 
               <div>
-                <label for="joinFor">If Pundo organized helpers together to get a better deal or service, what would you actually join for?</label>
-                <textarea id="joinFor" name="joinFor" placeholder="What problem would need to be solved for you to actually use it?" required></textarea>
+                <label for="joinFor">Have you ever joined with other helpers to buy something cheaper, share costs, send money, or get a better deal? What did you do?<span class="translation">(May time na ba na nagsama-sama kayo ng ibang helpers para makamura, mag-share ng gastos, magpadala, o makakuha ng better deal? Ano ang ginawa ninyo?)</span></label>
+                <textarea id="joinFor" name="joinFor" placeholder="If never, just say never." required></textarea>
               </div>
 
               <div>
-                <label for="worthIt">What would make it worth joining for you?</label>
-                <textarea id="worthIt" name="worthIt" placeholder="Example: save at least S$20 each month, better exchange rate, lower medical cost..." required></textarea>
+                <label for="worthIt">If you were going to switch from what you use now, how much would you need to save before it feels worth changing?<span class="translation">(Kung lilipat ka sa ibang service, magkano ang kailangan mong matipid bago mo masabing sulit lumipat?)</span></label>
+                <textarea id="worthIt" name="worthIt" placeholder="Example: S$5 per transfer, S$20 a month, S$50 on a clinic bill..." required></textarea>
               </div>
 
               <div class="form-nav">
@@ -750,14 +766,14 @@
         "How I send money home: " + value("sendMethod"),
         "Do I compare rate and fee?: " + value("compare"),
         "Last big unexpected expense: " + value("emergency"),
-        "Something helpers pay too much for: " + value("overpay"),
+        "Last expensive thing I paid for: " + value("overpay"),
         "",
         "WHAT I AM BUILDING",
-        "What I want after another 3–5 years: " + value("goal"),
-        "What I have already built/saved toward it: " + value("closer"),
-        "One thing I would change first: " + value("oneChange"),
-        "What I would actually join Pundo for: " + value("joinFor"),
-        "What would make it worth joining: " + value("worthIt")
+        "Biggest thing I am saving for now: " + value("goal"),
+        "What I already have because of working in Singapore: " + value("closer"),
+        "Money problem that stressed me most in the last 3 months: " + value("oneChange"),
+        "Whether I have joined with other helpers to save/share costs: " + value("joinFor"),
+        "How much I would need to save before switching: " + value("worthIt")
       ];
 
       const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
