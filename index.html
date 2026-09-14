@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Pundo is starting with Filipino domestic helpers in Singapore to understand the real numbers behind working abroad: pay, padala, utang, ipon, costs, and what those years of work are building." />
+  <meta name="description" content="Pundo listens to Filipinos working abroad. Our first pilot is with domestic workers in Singapore who have family in Davao or want to build or invest there." />
   <meta name="theme-color" content="#173f35" />
-  <title>Pundo | For Filipino helpers in Singapore</title>
+  <title>Pundo | What are your years abroad building?</title>
 
   <style>
     :root {
@@ -120,42 +120,6 @@
       margin: 0;
       color: #3f4a45;
       font-size: 1.02rem;
-    }
-
-    .mission {
-      padding: 30px;
-      border-radius: var(--radius);
-      background: var(--green);
-      color: white;
-    }
-
-    .mission .copy {
-      color: #eef4f1;
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .step {
-      padding: 20px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: var(--card);
-    }
-
-    .step strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--green);
-    }
-
-    .step p {
-      margin: 0;
-      color: var(--muted);
     }
 
     .future {
@@ -370,8 +334,8 @@
 
     @media (max-width: 620px) {
       .hero { padding-top: 38px; }
-      .steps, .checks { grid-template-columns: 1fr; }
-      .mission, .form-card { padding: 22px; }
+      .checks { grid-template-columns: 1fr; }
+      .form-card { padding: 22px; }
       .button { width: 100%; }
       .form-nav { flex-direction: column-reverse; }
     }
@@ -388,57 +352,26 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">For Filipino domestic helpers in Singapore</p>
-        <h1>You work in Singapore. You send money home. What is left for you?</h1>
+        <p class="eyebrow">For Filipinos working away from home</p>
+        <h1>What are your years abroad building?</h1>
         <p class="lead">
-          Pundo is starting by listening to the real numbers behind the work: pay, padala, utang, ipon,
-          unexpected expenses, and what years of working abroad are actually building for you.
+          Pundo starts with what people earn, send home, owe, save, and want to build.
         </p>
         <div class="actions">
-          <a class="button" href="#talk">Tell us about you</a>
+          <a class="button" href="#talk">Answer the pilot form</a>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div class="mission">
-          <p class="eyebrow" style="color:#dfeee8;">Why Pundo exists</p>
-          <h2>We are not here to ask if an idea “sounds good.” We want to know what actually happens to your money.</h2>
-          <p class="copy">
-            How much comes in. How much goes home. What gets borrowed. What costs too much.
-            What you have already managed to save or build. Those answers should decide what Pundo becomes.
-          </p>
-        </div>
-      </div>
-    </section>
+        <p class="eyebrow">Pilot 1 · Singapore to Davao</p>
+        <h2>Filipino domestic workers in Singapore with family in Davao, or who want to build or invest there.</h2>
 
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">What we are trying to learn</p>
-        <h2>Tell us what happened, not what you think we want to hear.</h2>
-        <p class="copy">
-          Real amounts and real situations are more useful than a polite “yes.” Approximate numbers are fine.
-          We are trying to understand the pattern across helpers, not judge one person.
-        </p>
-
-        <div class="steps">
-          <div class="step">
-            <strong>Your work</strong>
-            <p>How long you have worked in Singapore, how many employers you have had, and what your job actually includes.</p>
-          </div>
-          <div class="step">
-            <strong>Your money</strong>
-            <p>Pay, padala, debt, savings, fees, and how much is really left after a normal month.</p>
-          </div>
-          <div class="step">
-            <strong>What actually happened</strong>
-            <p>The last time money ran short, something felt too expensive, or you changed services to save money.</p>
-          </div>
-          <div class="step">
-            <strong>What the work has built</strong>
-            <p>What you already have because of Singapore and what you are still trying to reach.</p>
-          </div>
+        <div class="future">
+          <h3>More pilots coming soon</h3>
+          <p>Filipinos abroad interested in investing in Cebu, Filipino domestic workers in the UAE,
+            and Filipino seafarers.</p>
         </div>
       </div>
     </section>
@@ -446,11 +379,9 @@
     <section id="talk">
       <div class="wrap">
         <div class="form-card">
-          <p class="eyebrow">For helpers in Singapore</p>
           <h2>Tell us what the work really looks like for you.</h2>
           <p class="form-intro">
-            Approximate numbers are okay. We are trying to understand the real situation, not judge how you use your money.
-            At the end, WhatsApp will open with your answers. Nothing is sent until you choose to send it.
+            Approximate amounts are fine. Your answers open in WhatsApp first; you decide whether to send them.
           </p>
 
 
@@ -478,6 +409,14 @@
                 <label for="name">What should we call you?<span class="translation">(Anong gusto mong itawag namin sa'yo?)</span></label>
                 <input id="name" name="name" autocomplete="name" required />
               </div>
+
+              <fieldset>
+                <legend>What connects you to Davao? Choose any that apply.<span class="translation">(Ano ang koneksyon mo sa Davao? Piliin ang naaangkop sa'yo.)</span></legend>
+                <div class="checks">
+                  <label class="check"><input type="checkbox" name="davao" value="My family lives in Davao"> My family lives in Davao</label>
+                  <label class="check"><input type="checkbox" name="davao" value="I want to build or invest in Davao"> I want to build or invest in Davao</label>
+                </div>
+              </fieldset>
 
               <div>
                 <label for="years">How long have you been working as a domestic helper in Singapore?<span class="translation">(Gaano ka na katagal nagtatrabaho bilang helper dito sa Singapore?)</span></label>
@@ -663,8 +602,7 @@
               </div>
 
               <p class="trust">
-                Pundo is still being tested. This is research with Filipino helpers in Singapore, not a job application.
-                This page does not save your answers. WhatsApp opens with the answers first, and you decide whether to send them.
+                Pundo is still being tested. This is research, not a job application. This page does not save your answers.
               </p>
             </div>
           </form>
@@ -675,8 +613,7 @@
 
   <footer>
     <div class="wrap">
-      <strong>PUNDO</strong><br />
-      Starting with Filipino domestic helpers already working in Singapore.
+      <strong>PUNDO</strong>
     </div>
   </footer>
 
@@ -708,6 +645,12 @@
       }
 
       if (currentStep === 0) {
+        const checkedDavao = document.querySelectorAll('input[name="davao"]:checked');
+        if (!checkedDavao.length) {
+          alert("Please choose what connects you to Davao. This form is for the Singapore to Davao pilot.");
+          return false;
+        }
+
         const checkedWork = document.querySelectorAll('input[name="work"]:checked');
         if (!checkedWork.length) {
           alert("Please choose at least one type of work you currently do.");
@@ -740,14 +683,18 @@
       const work = [...form.querySelectorAll('input[name="work"]:checked')]
         .map(input => input.value)
         .join(", ");
+      const davao = [...form.querySelectorAll('input[name="davao"]:checked')]
+        .map(input => input.value)
+        .join(", ");
 
       const value = name => form.elements[name].value.trim();
 
       const lines = [
-        "Hi Pundo, I answered the Singapore helper form.",
+        "Hi Pundo, I answered the Singapore to Davao pilot form.",
         "",
         "ABOUT MY WORK",
         "Name: " + value("name"),
+        "My connection to Davao: " + davao,
         "Years working as a helper in Singapore: " + value("years"),
         "Number of employers in Singapore: " + value("employers"),
         "Current work: " + work,
