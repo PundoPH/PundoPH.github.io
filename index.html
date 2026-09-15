@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta
     name="description"
     content="Pundo helps Filipinos working abroad turn years of supporting family into something they can build and own."
   />
+
   <meta name="theme-color" content="#173f35" />
+
   <title>Pundo | What are your years abroad building?</title>
 
   <style>
@@ -24,26 +27,41 @@
       --radius: 20px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
       line-height: 1.55;
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
 
     .wrap {
       width: min(calc(100% - 32px), var(--max));
       margin: 0 auto;
     }
 
-    header { padding: 22px 0 10px; }
+    header {
+      padding: 22px 0 10px;
+    }
 
     .brand {
       color: var(--green);
@@ -52,7 +70,9 @@
       letter-spacing: .16em;
     }
 
-    .hero { padding: 52px 0 36px; }
+    .hero {
+      padding: 52px 0 36px;
+    }
 
     .eyebrow {
       margin: 0 0 14px;
@@ -78,7 +98,9 @@
       letter-spacing: -.035em;
     }
 
-    h3 { margin: 0 0 8px; }
+    h3 {
+      margin: 0 0 8px;
+    }
 
     .lead {
       margin: 24px 0 0;
@@ -87,7 +109,9 @@
       font-size: clamp(1.05rem, 2.5vw, 1.25rem);
     }
 
-    section { padding: 30px 0; }
+    section {
+      padding: 30px 0;
+    }
 
     .button {
       display: inline-flex;
@@ -137,7 +161,8 @@
 
     .story p,
     .future p,
-    .note p {
+    .note p,
+    .summary p {
       margin: 0;
     }
 
@@ -153,7 +178,9 @@
       color: var(--muted);
     }
 
-    .progress { margin: 20px 0 28px; }
+    .progress {
+      margin: 20px 0 28px;
+    }
 
     .progress-top {
       display: flex;
@@ -184,7 +211,9 @@
       gap: 18px;
     }
 
-    .form-step { display: none; }
+    .form-step {
+      display: none;
+    }
 
     .form-step.active {
       display: grid;
@@ -327,12 +356,26 @@
       margin-top: 4px;
     }
 
-    .form-nav .button { flex: 1; }
+    .form-nav .button {
+      flex: 1;
+    }
 
     .contact-options {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 12px;
+    }
+
+    .messenger-option {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .messenger-note {
+      margin: 8px 4px 0;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.45;
     }
 
     .trust {
@@ -348,7 +391,9 @@
     }
 
     @media (max-width: 650px) {
-      .hero { padding-top: 38px; }
+      .hero {
+        padding-top: 38px;
+      }
 
       .checks,
       .summary-grid,
@@ -356,9 +401,13 @@
         grid-template-columns: 1fr;
       }
 
-      .form-card { padding: 22px; }
+      .form-card {
+        padding: 22px;
+      }
 
-      .button { width: 100%; }
+      .button {
+        width: 100%;
+      }
 
       .form-nav {
         flex-direction: column-reverse;
@@ -369,1002 +418,1231 @@
 
 <body>
 
-<header>
-  <div class="wrap">
-    <div class="brand">PUNDO</div>
-  </div>
-</header>
-
-<main>
-
-  <section class="hero">
+  <header>
     <div class="wrap">
-
-      <p class="eyebrow">For Filipinos working away from home</p>
-
-      <h1>What are your years abroad building?</h1>
-
-      <p class="lead">
-        You work, send money home and pay for family needs.
-        Pundo is exploring how more of that money can build something
-        you and your family eventually own.
-      </p>
-
-      <div class="actions">
-        <a class="button" href="#start">Build your plan</a>
-      </div>
-
+      <div class="brand">PUNDO</div>
     </div>
-  </section>
+  </header>
 
-  <section>
-    <div class="wrap">
+  <main>
 
-      <div class="story">
-        <p>
-          <strong>I’m MJ.</strong> I grew up in the Philippines, run a sari-sari store,
-          and even applied to work as a helper myself. I’m building Pundo because
-          after years of supporting everyone else, I want more of that work to become
-          something you and your family actually own.
-        </p>
-      </div>
+    <section class="hero">
+      <div class="wrap">
 
-    </div>
-  </section>
+        <p class="eyebrow">For Filipinos working away from home</p>
 
-  <section>
-    <div class="wrap">
+        <h1>What are your years abroad building?</h1>
 
-      <p class="eyebrow">Starting with Filipino helpers in Singapore</p>
-
-      <h2>
-        Tell us what your life looks like now, then build what you actually want next.
-      </h2>
-
-      <div class="future">
-        <strong>Where would you want to build?</strong>
-        <p style="margin-top:6px;">
-          We are starting with Davao, Cebu and Bacolod, but you can choose somewhere else too.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="start">
-    <div class="wrap">
-
-      <div class="form-card">
-
-        <h2>Build your Pundo plan.</h2>
-
-        <p class="form-intro">
-          Approximate amounts are okay. Nothing is saved on this page.
-          At the end, you choose whether to send your answers through WhatsApp or Messenger.
+        <p class="lead">
+          You work, send money home and pay for family needs.
+          Pundo is exploring how more of that money can build something
+          you and your family eventually own.
         </p>
 
-        <div class="note">
-          <strong>Privacy</strong>
-          <p style="margin-top:6px;">
-            Do not enter bank account numbers, card numbers, passwords, OTPs,
-            Singpass details, passport numbers, FIN numbers or your employer’s address.
+        <div class="actions">
+          <a class="button" href="#start">Build your plan</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+
+        <div class="story">
+          <p>
+            <strong>I’m MJ.</strong> I grew up in the Philippines, run a sari-sari store,
+            and even applied to work as a helper myself. I’m building Pundo because
+            after years of supporting everyone else, I want more of that work to become
+            something you and your family actually own.
           </p>
         </div>
 
-        <div class="progress">
+      </div>
+    </section>
 
-          <div class="progress-top">
-            <span id="progressLabel">1 of 6 · My life today</span>
-            <span id="progressPercent">17%</span>
-          </div>
+    <section>
+      <div class="wrap">
 
-          <div class="progress-bar">
-            <div class="progress-fill" id="progressFill"></div>
-          </div>
+        <p class="eyebrow">Starting with Filipino helpers in Singapore</p>
 
+        <h2>
+          Tell us what your life looks like now, then build what you actually want next.
+        </h2>
+
+        <div class="future">
+          <strong>Where would you want to build?</strong>
+
+          <p style="margin-top:6px;">
+            We are starting with Davao, Cebu and Bacolod, but you can choose somewhere else too.
+          </p>
         </div>
 
-        <form id="helperForm">
+      </div>
+    </section>
 
-          <!-- STEP 1 -->
-          <div class="form-step active" data-step="0">
+    <section id="start">
+      <div class="wrap">
 
-            <h3 class="step-title">Your life today.</h3>
+        <div class="form-card">
 
-            <div>
-              <label for="name">
-                What should we call you?
-                <span class="translation">(Anong gusto mong itawag namin sa'yo?)</span>
-              </label>
+          <h2>Build your Pundo plan.</h2>
 
-              <input id="name" name="name" autocomplete="name" required />
+          <p class="form-intro">
+            Approximate amounts are okay. Nothing is saved on this page.
+            At the end, you choose whether to send your answers through WhatsApp or Messenger.
+          </p>
+
+          <div class="note">
+            <strong>Privacy</strong>
+
+            <p style="margin-top:6px;">
+              Do not enter bank account numbers, card numbers, passwords,
+              OTPs, Singpass details, passport numbers, FIN numbers or your employer’s address.
+            </p>
+          </div>
+
+          <div class="progress">
+
+            <div class="progress-top">
+              <span id="progressLabel">1 of 6 · My life today</span>
+              <span id="progressPercent">17%</span>
             </div>
 
-            <div>
-              <label for="years">
-                How many years have you worked abroad?
-                <span class="translation">(Ilang taon ka nang nagtatrabaho abroad?)</span>
-              </label>
-
-              <input
-                id="years"
-                name="years"
-                type="number"
-                min="0"
-                max="50"
-                step="0.5"
-                inputmode="decimal"
-                placeholder="Example: 9"
-                required
-              />
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
             </div>
 
-            <div>
-              <label for="salary">
-                About how much do you receive in a normal month?
-                <span class="translation">(Mga magkano ang normal mong sweldo kada buwan?)</span>
-              </label>
+          </div>
 
-              <div class="money-input">
-                <span>SGD</span>
+          <form id="helperForm">
+
+            <!-- STEP 1 -->
+            <div class="form-step active" data-step="0">
+
+              <h3 class="step-title">Your life today.</h3>
+
+              <div>
+                <label for="name">
+                  What should we call you?
+                  <span class="translation">(Anong gusto mong itawag namin sa'yo?)</span>
+                </label>
 
                 <input
-                  id="salary"
-                  name="salary"
-                  type="number"
-                  min="0"
-                  step="1"
-                  inputmode="decimal"
-                  placeholder="Example: 750"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
                   required
                 />
               </div>
-            </div>
 
-            <div>
-              <label for="remittance">
-                About how much do you normally send home each month?
-                <span class="translation">(Mga magkano usually ang pinapadala mo kada buwan?)</span>
-              </label>
-
-              <div class="money-input">
-                <span>SGD</span>
+              <div>
+                <label for="years">
+                  How many years have you worked abroad?
+                  <span class="translation">(Ilang taon ka nang nagtatrabaho abroad?)</span>
+                </label>
 
                 <input
-                  id="remittance"
-                  name="remittance"
+                  id="years"
+                  name="years"
                   type="number"
                   min="0"
-                  step="1"
+                  max="50"
+                  step="0.5"
                   inputmode="decimal"
-                  placeholder="Example: 400"
+                  placeholder="Example: 9"
                   required
                 />
               </div>
-            </div>
 
-            <div>
-              <label for="left">
-                After sending money home and paying your own expenses in Singapore,
-                about how much is usually left for you?
-                <span class="translation">
-                  (Pagkatapos ng padala at sarili mong gastos dito, mga magkano ang natitira para sa'yo?)
-                </span>
-              </label>
+              <div>
+                <label for="salary">
+                  About how much do you receive in a normal month?
+                  <span class="translation">(Mga magkano ang normal mong sweldo kada buwan?)</span>
+                </label>
 
-              <select id="left" name="left" required>
-                <option value="">Choose one</option>
-                <option>Nothing</option>
-                <option>Less than S$100</option>
-                <option>S$100 to S$300</option>
-                <option>S$301 to S$500</option>
-                <option>More than S$500</option>
-              </select>
-            </div>
+                <div class="money-input">
+                  <span>SGD</span>
 
-            <div>
-              <label for="debt">
-                Do you have debt you are still paying?
-                <span class="translation">(May utang ka pa bang binabayaran?)</span>
-              </label>
-
-              <select id="debt" name="debt" required>
-                <option value="">Choose one</option>
-                <option>No</option>
-                <option>Yes</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="savings">
-                About how much have you saved for yourself?
-                <span class="translation">(Mga magkano ang naipon mo para sa sarili mo?)</span>
-              </label>
-
-              <select id="savings" name="savings" required>
-                <option value="">Choose one</option>
-                <option>Nothing yet</option>
-                <option>Less than S$500</option>
-                <option>S$500 to S$1,999</option>
-                <option>S$2,000 to S$4,999</option>
-                <option>S$5,000 to S$9,999</option>
-                <option>S$10,000 or more</option>
-                <option>I prefer not to say</option>
-              </select>
-            </div>
-
-            <div class="form-nav">
-              <button class="button" type="button" data-next>
-                Next: Family costs
-              </button>
-            </div>
-
-          </div>
-
-          <!-- STEP 2 -->
-          <div class="form-step" data-step="1">
-
-            <h3 class="step-title">
-              What does your family already pay for every month?
-            </h3>
-
-            <p class="field-help">
-              Rough estimates are enough. Put 0 if your family does not pay for something.
-            </p>
-
-            <div>
-              <label for="housing">
-                Rent, mortgage or housing payment
-                <span class="translation">(Upa, hulog sa bahay, o housing payment)</span>
-              </label>
-
-              <div class="money-input">
-                <span>PHP</span>
-                <input id="housing" name="housing" type="number" min="0" step="100" value="0" />
-              </div>
-            </div>
-
-            <div>
-              <label for="healthcare">
-                Healthcare and medicine
-                <span class="translation">(Gamot, checkup at healthcare)</span>
-              </label>
-
-              <div class="money-input">
-                <span>PHP</span>
-                <input id="healthcare" name="healthcare" type="number" min="0" step="100" value="0" />
-              </div>
-            </div>
-
-            <div>
-              <label for="education">
-                School and education
-                <span class="translation">(School fees at ibang gastos sa pag-aaral)</span>
-              </label>
-
-              <div class="money-input">
-                <span>PHP</span>
-                <input id="education" name="education" type="number" min="0" step="100" value="0" />
-              </div>
-            </div>
-
-            <div>
-              <label for="utilities">
-                Electricity and water
-                <span class="translation">(Kuryente at tubig)</span>
-              </label>
-
-              <div class="money-input">
-                <span>PHP</span>
-                <input id="utilities" name="utilities" type="number" min="0" step="100" value="0" />
-              </div>
-            </div>
-
-            <div>
-              <label for="internet">
-                Internet and phone
-                <span class="translation">(Internet at phone)</span>
-              </label>
-
-              <div class="money-input">
-                <span>PHP</span>
-                <input id="internet" name="internet" type="number" min="0" step="100" value="0" />
-              </div>
-            </div>
-
-            <div>
-              <label for="otherCosts">
-                Other regular family costs
-                <span class="translation">(Iba pang regular na gastos ng pamilya)</span>
-              </label>
-
-              <div class="money-input">
-                <span>PHP</span>
-                <input id="otherCosts" name="otherCosts" type="number" min="0" step="100" value="0" />
-              </div>
-            </div>
-
-            <div class="summary">
-
-              <strong>Your current monthly picture</strong>
-
-              <div class="summary-grid">
-
-                <div class="summary-item">
-                  <strong id="salarySummary">S$0</strong>
-                  <span>Your monthly pay</span>
+                  <input
+                    id="salary"
+                    name="salary"
+                    type="number"
+                    min="0"
+                    step="1"
+                    inputmode="decimal"
+                    placeholder="Example: 750"
+                    required
+                  />
                 </div>
+              </div>
 
-                <div class="summary-item">
-                  <strong id="remittanceSummary">S$0</strong>
-                  <span>What you normally send home</span>
+              <div>
+                <label for="remittance">
+                  About how much do you normally send home each month?
+                  <span class="translation">(Mga magkano usually ang pinapadala mo kada buwan?)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>SGD</span>
+
+                  <input
+                    id="remittance"
+                    name="remittance"
+                    type="number"
+                    min="0"
+                    step="1"
+                    inputmode="decimal"
+                    placeholder="Example: 400"
+                    required
+                  />
                 </div>
+              </div>
 
-                <div class="summary-item">
-                  <strong id="familyCostSummary">₱0/month</strong>
-                  <span>Family costs you entered above</span>
-                </div>
+              <div>
+                <label for="left">
+                  After sending money home and paying your own expenses in Singapore,
+                  about how much is usually left for you?
+                  <span class="translation">
+                    (Pagkatapos ng padala at sarili mong gastos dito, mga magkano ang natitira para sa'yo?)
+                  </span>
+                </label>
 
+                <select id="left" name="left" required>
+                  <option value="">Choose one</option>
+                  <option>Nothing</option>
+                  <option>Less than S$100</option>
+                  <option>S$100 to S$300</option>
+                  <option>S$301 to S$500</option>
+                  <option>More than S$500</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="debt">
+                  Do you have debt you are still paying?
+                  <span class="translation">(May utang ka pa bang binabayaran?)</span>
+                </label>
+
+                <select id="debt" name="debt" required>
+                  <option value="">Choose one</option>
+                  <option>No</option>
+                  <option>Yes</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="savings">
+                  About how much have you saved for yourself?
+                  <span class="translation">(Mga magkano ang naipon mo para sa sarili mo?)</span>
+                </label>
+
+                <select id="savings" name="savings" required>
+                  <option value="">Choose one</option>
+                  <option>Nothing yet</option>
+                  <option>Less than S$500</option>
+                  <option>S$500 to S$1,999</option>
+                  <option>S$2,000 to S$4,999</option>
+                  <option>S$5,000 to S$9,999</option>
+                  <option>S$10,000 or more</option>
+                  <option>I prefer not to say</option>
+                </select>
+              </div>
+
+              <div class="form-nav">
+                <button
+                  class="button"
+                  type="button"
+                  data-next
+                >
+                  Next: Family costs
+                </button>
               </div>
 
             </div>
 
-            <div>
-              <label for="owned">
-                After your years working abroad, what do you or your family own today because of that work?
-                <span class="translation">
-                  (Sa lahat ng taon mong nagtatrabaho abroad, ano na ang pag-aari mo o ng pamilya mo dahil sa trabaho mo?)
-                </span>
-              </label>
+            <!-- STEP 2 -->
+            <div class="form-step" data-step="1">
 
-              <textarea
-                id="owned"
-                name="owned"
-                placeholder="Example: land, house, small business, motorcycle, savings, nothing yet..."
-                required
-              ></textarea>
-            </div>
+              <h3 class="step-title">
+                What does your family already pay for every month?
+              </h3>
 
-            <div class="form-nav">
-              <button class="button secondary" type="button" data-back>Back</button>
-              <button class="button" type="button" data-next>Next: What I want</button>
-            </div>
-
-          </div>
-
-          <!-- STEP 3 -->
-          <div class="form-step" data-step="2">
-
-            <h3 class="step-title">
-              What do you actually want those years abroad to build?
-            </h3>
-
-            <fieldset>
-              <legend>
-                Where would you seriously consider building or owning something?
-                <span class="translation">(Saan mo talaga gustong magkaroon o mag-build?)</span>
-              </legend>
-
-              <div class="checks">
-
-                <label class="check">
-                  <input type="checkbox" name="location" value="Davao" />
-                  Davao
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="location" value="Cebu" />
-                  Cebu
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="location" value="Bacolod" />
-                  Bacolod
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="location" value="Somewhere else" />
-                  Somewhere else
-                </label>
-
-              </div>
-            </fieldset>
-
-            <div>
-              <label for="otherLocation">
-                If somewhere else, where?
-                <span class="translation">(Kung ibang lugar, saan?)</span>
-              </label>
-
-              <input
-                id="otherLocation"
-                name="otherLocation"
-                placeholder="City or province"
-              />
-            </div>
-
-            <div>
-              <label for="goal">
-                What are you most trying to build right now?
-                <span class="translation">(Ano talaga ang gusto mong mabuo ngayon?)</span>
-              </label>
-
-              <select id="goal" name="goal" required>
-                <option value="">Choose one</option>
-                <option>A home</option>
-                <option>Land</option>
-                <option>A business</option>
-                <option>Education for my children</option>
-                <option>Savings and security</option>
-                <option>Something else</option>
-              </select>
-            </div>
-
-            <div class="form-nav">
-              <button class="button secondary" type="button" data-back>Back</button>
-              <button class="button" type="button" data-next>Next: My house</button>
-            </div>
-
-          </div>
-
-          <!-- STEP 4 -->
-          <div class="form-step" data-step="3">
-
-            <h3 class="step-title">
-              If a home is part of the plan, what would actually fit your family?
-            </h3>
-
-            <div>
-              <label for="ownership">
-                Which would you seriously consider?
-                <span class="translation">(Alin dito ang seryoso mong iko-consider?)</span>
-              </label>
-
-              <select id="ownership" name="ownership" required>
-                <option value="">Choose one</option>
-                <option>Rent</option>
-                <option>Rent-to-own</option>
-                <option>Own outright</option>
-                <option>Buy land first, build later</option>
-                <option>I am not sure yet</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="bedrooms">
-                How many bedrooms would be enough?
-                <span class="translation">(Ilang bedroom ang sapat?)</span>
-              </label>
-
-              <select id="bedrooms" name="bedrooms" required>
-                <option value="">Choose one</option>
-                <option>1 bedroom</option>
-                <option>2 bedrooms</option>
-                <option>3 bedrooms</option>
-                <option>4 or more bedrooms</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="bathrooms">
-                How many bathrooms?
-                <span class="translation">(Ilang bathroom?)</span>
-              </label>
-
-              <select id="bathrooms" name="bathrooms" required>
-                <option value="">Choose one</option>
-                <option>1 bathroom</option>
-                <option>2 bathrooms</option>
-                <option>3 or more bathrooms</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="whoLives">
-                Who would live there?
-                <span class="translation">(Sino ang titira doon?)</span>
-              </label>
-
-              <textarea
-                id="whoLives"
-                name="whoLives"
-                placeholder="Example: me, my 2 children and my mother"
-                required
-              ></textarea>
-            </div>
-
-            <div>
-              <label for="homeBudget">
-                What monthly amount could you realistically keep paying toward housing?
-                <span class="translation">
-                  (Magkano kada buwan ang kaya mong tuloy-tuloy bayaran para sa bahay?)
-                </span>
-              </label>
-
-              <div class="money-input">
-                <span>SGD</span>
-
-                <input
-                  id="homeBudget"
-                  name="homeBudget"
-                  type="number"
-                  min="0"
-                  step="1"
-                  inputmode="decimal"
-                  placeholder="Example: 200"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label for="rowHouse">
-                Would you consider a row house if sharing walls and infrastructure lowered what you had to pay?
-                <span class="translation">
-                  (Iko-consider mo ba ang row house kung mas mababa ang babayaran dahil shared ang ilang construction at infrastructure costs?)
-                </span>
-              </label>
-
-              <select id="rowHouse" name="rowHouse" required>
-                <option value="">Choose one</option>
-                <option>Yes</option>
-                <option>Maybe, I would want to see the design and price first</option>
-                <option>No</option>
-              </select>
-            </div>
-
-            <p class="field-help">
-              Later, actual house concepts can be shown based on your location,
-              family size, budget and choices. We are not showing fake example houses here.
-            </p>
-
-            <div class="form-nav">
-              <button class="button secondary" type="button" data-back>Back</button>
-              <button class="button" type="button" data-next>Next: My community</button>
-            </div>
-
-          </div>
-
-          <!-- STEP 5 -->
-          <div class="form-step" data-step="4">
-
-            <h3 class="step-title">
-              What would actually matter around the home?
-            </h3>
-
-            <p class="field-help">
-              Choose only what your family would genuinely use or pay for.
-            </p>
-
-            <fieldset>
-
-              <legend>
-                What would matter to your family?
-                <span class="translation">(Ano ang talagang importante sa pamilya mo?)</span>
-              </legend>
-
-              <div class="checks">
-
-                <label class="check">
-                  <input type="checkbox" name="community" value="Healthcare" />
-                  Healthcare
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="community" value="Education" />
-                  Education
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="community" value="Reliable internet" />
-                  Reliable internet
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="community" value="Solar or backup power" />
-                  Solar / backup power
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="community" value="Childcare" />
-                  Childcare
-                </label>
-
-                <label class="check">
-                  <input type="checkbox" name="community" value="Small business space" />
-                  Small business space
-                </label>
-
-              </div>
-
-            </fieldset>
-
-            <div>
-              <label for="emergencyFund">
-                Would you consider putting a small amount each month into a community emergency fund if the rules were clear and members could receive help after a serious illness or emergency?
-                <span class="translation">
-                  (Okay ba sa'yo ang maliit na monthly contribution sa community emergency fund kung malinaw ang rules at may tulong kapag may serious illness o emergency?)
-                </span>
-              </label>
-
-              <select id="emergencyFund" name="emergencyFund" required>
-                <option value="">Choose one</option>
-                <option>Yes</option>
-                <option>Maybe, depending on the amount and rules</option>
-                <option>No</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="missing">
-                What is missing from this plan that your family actually needs?
-                <span class="translation">
-                  (Ano pa ang kulang dito na talagang kailangan ng pamilya mo?)
-                </span>
-              </label>
-
-              <textarea
-                id="missing"
-                name="missing"
-                placeholder="Optional"
-              ></textarea>
-            </div>
-
-            <div class="form-nav">
-              <button class="button secondary" type="button" data-back>Back</button>
-              <button class="button" type="button" data-next>Finish</button>
-            </div>
-
-          </div>
-
-          <!-- STEP 6 -->
-          <div class="form-step" data-step="5">
-
-            <h3 class="step-title">
-              Send your plan to MJ.
-            </h3>
-
-            <div class="summary">
-              <p>
-                Pundo is still a pilot. This is not a house sale, bank account,
-                investment product or insurance product. Your answers help us figure out
-                what helpers actually want and what needs to be built first.
+              <p class="field-help">
+                Rough estimates are enough. Put 0 if your family does not pay for something.
               </p>
+
+              <div>
+                <label for="housing">
+                  Rent, mortgage or housing payment
+                  <span class="translation">(Upa, hulog sa bahay, o housing payment)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>PHP</span>
+
+                  <input
+                    id="housing"
+                    name="housing"
+                    type="number"
+                    min="0"
+                    step="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="healthcare">
+                  Healthcare and medicine
+                  <span class="translation">(Gamot, checkup at healthcare)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>PHP</span>
+
+                  <input
+                    id="healthcare"
+                    name="healthcare"
+                    type="number"
+                    min="0"
+                    step="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="education">
+                  School and education
+                  <span class="translation">(School fees at ibang gastos sa pag-aaral)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>PHP</span>
+
+                  <input
+                    id="education"
+                    name="education"
+                    type="number"
+                    min="0"
+                    step="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="utilities">
+                  Electricity and water
+                  <span class="translation">(Kuryente at tubig)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>PHP</span>
+
+                  <input
+                    id="utilities"
+                    name="utilities"
+                    type="number"
+                    min="0"
+                    step="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="internet">
+                  Internet and phone
+                  <span class="translation">(Internet at phone)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>PHP</span>
+
+                  <input
+                    id="internet"
+                    name="internet"
+                    type="number"
+                    min="0"
+                    step="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="otherCosts">
+                  Other regular family costs
+                  <span class="translation">(Iba pang regular na gastos ng pamilya)</span>
+                </label>
+
+                <div class="money-input">
+                  <span>PHP</span>
+
+                  <input
+                    id="otherCosts"
+                    name="otherCosts"
+                    type="number"
+                    min="0"
+                    step="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+
+              <div class="summary">
+
+                <strong>Your current monthly picture</strong>
+
+                <div class="summary-grid">
+
+                  <div class="summary-item">
+                    <strong id="salarySummary">S$0</strong>
+                    <span>Your monthly pay</span>
+                  </div>
+
+                  <div class="summary-item">
+                    <strong id="remittanceSummary">S$0</strong>
+                    <span>What you normally send home</span>
+                  </div>
+
+                  <div class="summary-item">
+                    <strong id="familyCostSummary">₱0/month</strong>
+                    <span>Family costs you entered above</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div>
+                <label for="owned">
+                  After your years working abroad, what do you or your family own today because of that work?
+                  <span class="translation">
+                    (Sa lahat ng taon mong nagtatrabaho abroad, ano na ang pag-aari mo o ng pamilya mo dahil sa trabaho mo?)
+                  </span>
+                </label>
+
+                <textarea
+                  id="owned"
+                  name="owned"
+                  placeholder="Example: land, house, small business, motorcycle, savings, nothing yet..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-nav">
+
+                <button
+                  class="button secondary"
+                  type="button"
+                  data-back
+                >
+                  Back
+                </button>
+
+                <button
+                  class="button"
+                  type="button"
+                  data-next
+                >
+                  Next: What I want
+                </button>
+
+              </div>
+
             </div>
 
-            <div>
-              <label for="serious">
-                If Pundo could build a real option around what you chose, would you want MJ to contact you?
-                <span class="translation">
-                  (Kung makagawa ang Pundo ng totoong option base sa pinili mo, gusto mo bang kausapin ka ni MJ?)
-                </span>
-              </label>
+            <!-- STEP 3 -->
+            <div class="form-step" data-step="2">
 
-              <select id="serious" name="serious" required>
-                <option value="">Choose one</option>
-                <option>Yes, I want to discuss it</option>
-                <option>Maybe, show me the numbers first</option>
-                <option>Not right now</option>
-              </select>
+              <h3 class="step-title">
+                What do you actually want those years abroad to build?
+              </h3>
+
+              <fieldset>
+
+                <legend>
+                  Where would you seriously consider building or owning something?
+                  <span class="translation">(Saan mo talaga gustong magkaroon o mag-build?)</span>
+                </legend>
+
+                <div class="checks">
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="location"
+                      value="Davao"
+                    />
+                    Davao
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="location"
+                      value="Cebu"
+                    />
+                    Cebu
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="location"
+                      value="Bacolod"
+                    />
+                    Bacolod
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="location"
+                      value="Somewhere else"
+                    />
+                    Somewhere else
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+              <div>
+                <label for="otherLocation">
+                  If somewhere else, where?
+                  <span class="translation">(Kung ibang lugar, saan?)</span>
+                </label>
+
+                <input
+                  id="otherLocation"
+                  name="otherLocation"
+                  placeholder="City or province"
+                />
+              </div>
+
+              <div>
+                <label for="goal">
+                  What are you most trying to build right now?
+                  <span class="translation">(Ano talaga ang gusto mong mabuo ngayon?)</span>
+                </label>
+
+                <select id="goal" name="goal" required>
+                  <option value="">Choose one</option>
+                  <option>A home</option>
+                  <option>Land</option>
+                  <option>A business</option>
+                  <option>Education for my children</option>
+                  <option>Savings and security</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+
+              <div class="form-nav">
+
+                <button
+                  class="button secondary"
+                  type="button"
+                  data-back
+                >
+                  Back
+                </button>
+
+                <button
+                  class="button"
+                  type="button"
+                  data-next
+                >
+                  Next: My house
+                </button>
+
+              </div>
+
             </div>
 
-            <div class="contact-options">
+            <!-- STEP 4 -->
+            <div class="form-step" data-step="3">
 
-              <button
-                class="button"
-                type="button"
-                id="sendWhatsApp"
-              >
-                Send answers on WhatsApp
-              </button>
+              <h3 class="step-title">
+                If a home is part of the plan, what would actually fit your family?
+              </h3>
+
+              <div>
+                <label for="ownership">
+                  Which would you seriously consider?
+                  <span class="translation">(Alin dito ang seryoso mong iko-consider?)</span>
+                </label>
+
+                <select id="ownership" name="ownership" required>
+                  <option value="">Choose one</option>
+                  <option>Rent</option>
+                  <option>Rent-to-own</option>
+                  <option>Own outright</option>
+                  <option>Buy land first, build later</option>
+                  <option>I am not sure yet</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="bedrooms">
+                  How many bedrooms would be enough?
+                  <span class="translation">(Ilang bedroom ang sapat?)</span>
+                </label>
+
+                <select id="bedrooms" name="bedrooms" required>
+                  <option value="">Choose one</option>
+                  <option>1 bedroom</option>
+                  <option>2 bedrooms</option>
+                  <option>3 bedrooms</option>
+                  <option>4 or more bedrooms</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="bathrooms">
+                  How many bathrooms?
+                  <span class="translation">(Ilang bathroom?)</span>
+                </label>
+
+                <select id="bathrooms" name="bathrooms" required>
+                  <option value="">Choose one</option>
+                  <option>1 bathroom</option>
+                  <option>2 bathrooms</option>
+                  <option>3 or more bathrooms</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="whoLives">
+                  Who would live there?
+                  <span class="translation">(Sino ang titira doon?)</span>
+                </label>
+
+                <textarea
+                  id="whoLives"
+                  name="whoLives"
+                  placeholder="Example: me, my 2 children and my mother"
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <label for="homeBudget">
+                  What monthly amount could you realistically keep paying toward housing?
+                  <span class="translation">
+                    (Magkano kada buwan ang kaya mong tuloy-tuloy bayaran para sa bahay?)
+                  </span>
+                </label>
+
+                <div class="money-input">
+                  <span>SGD</span>
+
+                  <input
+                    id="homeBudget"
+                    name="homeBudget"
+                    type="number"
+                    min="0"
+                    step="1"
+                    inputmode="decimal"
+                    placeholder="Example: 200"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="rowHouse">
+                  Would you consider a row house if sharing walls and infrastructure lowered what you had to pay?
+                  <span class="translation">
+                    (Iko-consider mo ba ang row house kung mas mababa ang babayaran dahil shared ang ilang construction at infrastructure costs?)
+                  </span>
+                </label>
+
+                <select id="rowHouse" name="rowHouse" required>
+                  <option value="">Choose one</option>
+                  <option>Yes</option>
+                  <option>Maybe, I would want to see the design and price first</option>
+                  <option>No</option>
+                </select>
+              </div>
+
+              <p class="field-help">
+                Later, actual house concepts can be shown based on your location,
+                family size, budget and choices.
+              </p>
+
+              <div class="form-nav">
+
+                <button
+                  class="button secondary"
+                  type="button"
+                  data-back
+                >
+                  Back
+                </button>
+
+                <button
+                  class="button"
+                  type="button"
+                  data-next
+                >
+                  Next: My community
+                </button>
+
+              </div>
+
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="form-step" data-step="4">
+
+              <h3 class="step-title">
+                What would actually matter around the home?
+              </h3>
+
+              <p class="field-help">
+                Choose only what your family would genuinely use or pay for.
+              </p>
+
+              <fieldset>
+
+                <legend>
+                  What would matter to your family?
+                  <span class="translation">(Ano ang talagang importante sa pamilya mo?)</span>
+                </legend>
+
+                <div class="checks">
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="community"
+                      value="Healthcare"
+                    />
+                    Healthcare
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="community"
+                      value="Education"
+                    />
+                    Education
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="community"
+                      value="Reliable internet"
+                    />
+                    Reliable internet
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="community"
+                      value="Solar or backup power"
+                    />
+                    Solar / backup power
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="community"
+                      value="Childcare"
+                    />
+                    Childcare
+                  </label>
+
+                  <label class="check">
+                    <input
+                      type="checkbox"
+                      name="community"
+                      value="Small business space"
+                    />
+                    Small business space
+                  </label>
+
+                </div>
+
+              </fieldset>
+
+              <div>
+                <label for="emergencyFund">
+                  Would you consider putting a small amount each month into a community emergency fund if the rules were clear and members could receive help after a serious illness or emergency?
+                  <span class="translation">
+                    (Okay ba sa'yo ang maliit na monthly contribution sa community emergency fund kung malinaw ang rules at may tulong kapag may serious illness o emergency?)
+                  </span>
+                </label>
+
+                <select
+                  id="emergencyFund"
+                  name="emergencyFund"
+                  required
+                >
+                  <option value="">Choose one</option>
+                  <option>Yes</option>
+                  <option>Maybe, depending on the amount and rules</option>
+                  <option>No</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="missing">
+                  What is missing from this plan that your family actually needs?
+                  <span class="translation">
+                    (Ano pa ang kulang dito na talagang kailangan ng pamilya mo?)
+                  </span>
+                </label>
+
+                <textarea
+                  id="missing"
+                  name="missing"
+                  placeholder="Optional"
+                ></textarea>
+              </div>
+
+              <div class="form-nav">
+
+                <button
+                  class="button secondary"
+                  type="button"
+                  data-back
+                >
+                  Back
+                </button>
+
+                <button
+                  class="button"
+                  type="button"
+                  data-next
+                >
+                  Finish
+                </button>
+
+              </div>
+
+            </div>
+
+            <!-- STEP 6 -->
+            <div class="form-step" data-step="5">
+
+              <h3 class="step-title">
+                Send your plan to MJ.
+              </h3>
+
+              <div class="summary">
+                <p>
+                  Pundo is still a pilot. Your answers help us understand what helpers
+                  actually want and what needs to be built first.
+                </p>
+              </div>
+
+              <div>
+                <label for="serious">
+                  If Pundo could build a real option around what you chose, would you want MJ to contact you?
+                  <span class="translation">
+                    (Kung makagawa ang Pundo ng totoong option base sa pinili mo, gusto mo bang kausapin ka ni MJ?)
+                  </span>
+                </label>
+
+                <select
+                  id="serious"
+                  name="serious"
+                  required
+                >
+                  <option value="">Choose one</option>
+                  <option>Yes, I want to discuss it</option>
+                  <option>Maybe, show me the numbers first</option>
+                  <option>Not right now</option>
+                </select>
+              </div>
+
+              <div class="contact-options">
+
+                <button
+                  class="button"
+                  type="button"
+                  id="sendWhatsApp"
+                >
+                  Send answers on WhatsApp
+                </button>
+
+                <div class="messenger-option">
+
+                  <button
+                    class="button secondary"
+                    type="button"
+                    id="sendMessenger"
+                  >
+                    Send answers on Messenger
+                  </button>
+
+                  <p class="messenger-note">
+                    Messenger: tap the button, then tap OK.
+                    When Messenger opens, press and hold the message box,
+                    then tap <strong>Paste</strong>. Your answers should appear there.
+                  </p>
+
+                </div>
+
+              </div>
 
               <button
                 class="button secondary"
                 type="button"
-                id="sendMessenger"
+                data-back
               >
-                Send answers on Messenger
+                Back
               </button>
 
             </div>
 
-            <button
-              class="button secondary"
-              type="button"
-              data-back
-            >
-              Back
-            </button>
+          </form>
 
-            <p class="trust">
-              WhatsApp opens with your answers already filled in.
-              For Messenger, your answers are copied first, then Messenger opens so you can paste and send them.
-            </p>
-
-          </div>
-
-        </form>
+        </div>
 
       </div>
+    </section>
 
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>PUNDO</strong>
     </div>
-  </section>
+  </footer>
 
-</main>
+  <script>
+    const WHATSAPP_NUMBER = ["65", "8034", "6968"].join("");
+    const MESSENGER_URL = "https://m.me/itsmjta";
 
-<footer>
-  <div class="wrap">
-    <strong>PUNDO</strong>
-  </div>
-</footer>
+    const form = document.getElementById("helperForm");
+    const steps = [...document.querySelectorAll(".form-step")];
 
-<script>
-  const WHATSAPP_NUMBER = ["65", "8034", "6968"].join("");
-  const MESSENGER_URL = "https://m.me/itsmjta";
-
-  const form = document.getElementById("helperForm");
-  const steps = [...document.querySelectorAll(".form-step")];
-
-  const labels = [
-    "My life today",
-    "Family costs",
-    "What I want",
-    "My house",
-    "My community",
-    "Send my plan"
-  ];
-
-  let currentStep = 0;
-
-  function formatSGD(value) {
-    return "S$" + Number(value || 0).toLocaleString("en-SG", {
-      maximumFractionDigits: 0
-    });
-  }
-
-  function formatPHP(value) {
-    return "₱" + Number(value || 0).toLocaleString("en-PH", {
-      maximumFractionDigits: 0
-    });
-  }
-
-  function showStep(index) {
-    currentStep = index;
-
-    steps.forEach((step, i) => {
-      step.classList.toggle("active", i === index);
-    });
-
-    const percent = Math.round(((index + 1) / steps.length) * 100);
-
-    document.getElementById("progressFill").style.width = percent + "%";
-    document.getElementById("progressLabel").textContent =
-      `${index + 1} of ${steps.length} · ${labels[index]}`;
-    document.getElementById("progressPercent").textContent = percent + "%";
-
-    if (index === 1) {
-      updateMonthlyPicture();
-    }
-
-    document.getElementById("start").scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-  }
-
-  function validateCurrentStep() {
-    const required = [
-      ...steps[currentStep].querySelectorAll("[required]")
+    const labels = [
+      "My life today",
+      "Family costs",
+      "What I want",
+      "My house",
+      "My community",
+      "Send my plan"
     ];
 
-    for (const field of required) {
-      if (!field.checkValidity()) {
-        field.reportValidity();
-        return false;
-      }
+    let currentStep = 0;
+
+    function formatSGD(value) {
+      return "S$" + Number(value || 0).toLocaleString("en-SG", {
+        maximumFractionDigits: 0
+      });
     }
 
-    if (currentStep === 2) {
-      const locations = document.querySelectorAll(
-        'input[name="location"]:checked'
-      );
-
-      if (!locations.length) {
-        alert("Please choose at least one place you would seriously consider.");
-        return false;
-      }
+    function formatPHP(value) {
+      return "₱" + Number(value || 0).toLocaleString("en-PH", {
+        maximumFractionDigits: 0
+      });
     }
 
-    return true;
-  }
+    function showStep(index) {
+      currentStep = index;
 
-  function value(name) {
-    const field = form.elements[name];
-    return field ? String(field.value).trim() : "";
-  }
+      steps.forEach((step, i) => {
+        step.classList.toggle("active", i === index);
+      });
 
-  function checked(name) {
-    return [
-      ...form.querySelectorAll(`input[name="${name}"]:checked`)
-    ]
-      .map(input => input.value)
-      .join(", ");
-  }
+      const percent =
+        Math.round(((index + 1) / steps.length) * 100);
 
-  function updateMonthlyPicture() {
-    const salary = Number(value("salary") || 0);
-    const remittance = Number(value("remittance") || 0);
+      document.getElementById("progressFill").style.width =
+        percent + "%";
 
-    const familyCost =
-      Number(value("housing") || 0) +
-      Number(value("healthcare") || 0) +
-      Number(value("education") || 0) +
-      Number(value("utilities") || 0) +
-      Number(value("internet") || 0) +
-      Number(value("otherCosts") || 0);
+      document.getElementById("progressLabel").textContent =
+        `${index + 1} of ${steps.length} · ${labels[index]}`;
 
-    document.getElementById("salarySummary").textContent =
-      formatSGD(salary);
+      document.getElementById("progressPercent").textContent =
+        percent + "%";
 
-    document.getElementById("remittanceSummary").textContent =
-      formatSGD(remittance);
+      if (index === 1) {
+        updateMonthlyPicture();
+      }
 
-    document.getElementById("familyCostSummary").textContent =
-      formatPHP(familyCost) + "/month";
-  }
-
-  [
-    "salary",
-    "remittance",
-    "housing",
-    "healthcare",
-    "education",
-    "utilities",
-    "internet",
-    "otherCosts"
-  ].forEach(id => {
-    const field = document.getElementById(id);
-
-    if (field) {
-      field.addEventListener("input", updateMonthlyPicture);
+      document
+        .getElementById("start")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
     }
-  });
 
-  document.querySelectorAll("[data-next]").forEach(button => {
-    button.addEventListener("click", () => {
-      if (
-        validateCurrentStep() &&
-        currentStep < steps.length - 1
-      ) {
-        showStep(currentStep + 1);
+    function validateCurrentStep() {
+      const required = [
+        ...steps[currentStep].querySelectorAll("[required]")
+      ];
+
+      for (const field of required) {
+        if (!field.checkValidity()) {
+          field.reportValidity();
+          return false;
+        }
       }
-    });
-  });
 
-  document.querySelectorAll("[data-back]").forEach(button => {
-    button.addEventListener("click", () => {
-      if (currentStep > 0) {
-        showStep(currentStep - 1);
+      if (currentStep === 2) {
+        const locations = document.querySelectorAll(
+          'input[name="location"]:checked'
+        );
+
+        if (!locations.length) {
+          alert(
+            "Please choose at least one place you would seriously consider."
+          );
+          return false;
+        }
       }
-    });
-  });
 
-  function buildMessage() {
-    const familyCost =
-      Number(value("housing") || 0) +
-      Number(value("healthcare") || 0) +
-      Number(value("education") || 0) +
-      Number(value("utilities") || 0) +
-      Number(value("internet") || 0) +
-      Number(value("otherCosts") || 0);
-
-    return [
-      "Hi MJ, I completed the Pundo form.",
-      "",
-      "MY LIFE TODAY",
-      "Name: " + value("name"),
-      "Years working abroad: " + value("years"),
-      "Monthly pay: " + formatSGD(value("salary")),
-      "Monthly remittance: " + formatSGD(value("remittance")),
-      "Usually left for me: " + value("left"),
-      "Debt now: " + value("debt"),
-      "Savings now: " + value("savings"),
-      "",
-      "MY FAMILY'S MONTHLY COSTS",
-      "Housing: " + formatPHP(value("housing")),
-      "Healthcare: " + formatPHP(value("healthcare")),
-      "Education: " + formatPHP(value("education")),
-      "Utilities: " + formatPHP(value("utilities")),
-      "Internet / phone: " + formatPHP(value("internet")),
-      "Other regular costs: " + formatPHP(value("otherCosts")),
-      "Total entered: " + formatPHP(familyCost) + "/month",
-      "",
-      "WHAT MY YEARS ABROAD HAVE BUILT",
-      value("owned"),
-      "",
-      "WHAT I WANT",
-      "Locations: " + checked("location"),
-      "Other location: " + (value("otherLocation") || "None"),
-      "Main goal: " + value("goal"),
-      "",
-      "MY HOUSE",
-      "Housing type: " + value("ownership"),
-      "Bedrooms: " + value("bedrooms"),
-      "Bathrooms: " + value("bathrooms"),
-      "Who would live there: " + value("whoLives"),
-      "Monthly housing amount I could realistically pay: " +
-        formatSGD(value("homeBudget")),
-      "Would consider a row house: " + value("rowHouse"),
-      "",
-      "MY COMMUNITY",
-      "What matters: " + (checked("community") || "None selected"),
-      "Community emergency fund: " + value("emergencyFund"),
-      "What is missing: " + (value("missing") || "Nothing added"),
-      "",
-      "PILOT INTEREST",
-      value("serious")
-    ].join("\n");
-  }
-
-  document
-    .getElementById("sendWhatsApp")
-    .addEventListener("click", () => {
-      if (!validateCurrentStep()) return;
-
-      const message = buildMessage();
-
-      const url =
-        "https://wa.me/" +
-        WHATSAPP_NUMBER +
-        "?text=" +
-        encodeURIComponent(message);
-
-      window.location.href = url;
-    });
-
-  async function copyText(text) {
-    try {
-      await navigator.clipboard.writeText(text);
       return true;
-    } catch (error) {
-      const textarea = document.createElement("textarea");
+    }
+
+    function value(name) {
+      const field = form.elements[name];
+
+      return field
+        ? String(field.value).trim()
+        : "";
+    }
+
+    function checked(name) {
+      return [
+        ...form.querySelectorAll(
+          `input[name="${name}"]:checked`
+        )
+      ]
+        .map(input => input.value)
+        .join(", ");
+    }
+
+    function updateMonthlyPicture() {
+      const salary =
+        Number(value("salary") || 0);
+
+      const remittance =
+        Number(value("remittance") || 0);
+
+      const familyCost =
+        Number(value("housing") || 0) +
+        Number(value("healthcare") || 0) +
+        Number(value("education") || 0) +
+        Number(value("utilities") || 0) +
+        Number(value("internet") || 0) +
+        Number(value("otherCosts") || 0);
+
+      document.getElementById("salarySummary").textContent =
+        formatSGD(salary);
+
+      document.getElementById("remittanceSummary").textContent =
+        formatSGD(remittance);
+
+      document.getElementById("familyCostSummary").textContent =
+        formatPHP(familyCost) + "/month";
+    }
+
+    [
+      "salary",
+      "remittance",
+      "housing",
+      "healthcare",
+      "education",
+      "utilities",
+      "internet",
+      "otherCosts"
+    ].forEach(id => {
+      const field = document.getElementById(id);
+
+      if (field) {
+        field.addEventListener(
+          "input",
+          updateMonthlyPicture
+        );
+      }
+    });
+
+    document
+      .querySelectorAll("[data-next]")
+      .forEach(button => {
+        button.addEventListener("click", () => {
+          if (
+            validateCurrentStep() &&
+            currentStep < steps.length - 1
+          ) {
+            showStep(currentStep + 1);
+          }
+        });
+      });
+
+    document
+      .querySelectorAll("[data-back]")
+      .forEach(button => {
+        button.addEventListener("click", () => {
+          if (currentStep > 0) {
+            showStep(currentStep - 1);
+          }
+        });
+      });
+
+    function buildMessage() {
+      const familyCost =
+        Number(value("housing") || 0) +
+        Number(value("healthcare") || 0) +
+        Number(value("education") || 0) +
+        Number(value("utilities") || 0) +
+        Number(value("internet") || 0) +
+        Number(value("otherCosts") || 0);
+
+      return [
+        "Hi MJ, I completed the Pundo form.",
+        "",
+        "MY LIFE TODAY",
+        "Name: " + value("name"),
+        "Years working abroad: " + value("years"),
+        "Monthly pay: " + formatSGD(value("salary")),
+        "Monthly remittance: " + formatSGD(value("remittance")),
+        "Usually left for me: " + value("left"),
+        "Debt now: " + value("debt"),
+        "Savings now: " + value("savings"),
+        "",
+        "MY FAMILY'S MONTHLY COSTS",
+        "Housing: " + formatPHP(value("housing")),
+        "Healthcare: " + formatPHP(value("healthcare")),
+        "Education: " + formatPHP(value("education")),
+        "Utilities: " + formatPHP(value("utilities")),
+        "Internet / phone: " + formatPHP(value("internet")),
+        "Other regular costs: " + formatPHP(value("otherCosts")),
+        "Total entered: " + formatPHP(familyCost) + "/month",
+        "",
+        "WHAT MY YEARS ABROAD HAVE BUILT",
+        value("owned"),
+        "",
+        "WHAT I WANT",
+        "Locations: " + checked("location"),
+        "Other location: " + (value("otherLocation") || "None"),
+        "Main goal: " + value("goal"),
+        "",
+        "MY HOUSE",
+        "Housing type: " + value("ownership"),
+        "Bedrooms: " + value("bedrooms"),
+        "Bathrooms: " + value("bathrooms"),
+        "Who would live there: " + value("whoLives"),
+        "Monthly housing amount I could realistically pay: " +
+          formatSGD(value("homeBudget")),
+        "Would consider a row house: " + value("rowHouse"),
+        "",
+        "MY COMMUNITY",
+        "What matters: " + (checked("community") || "None selected"),
+        "Community emergency fund: " + value("emergencyFund"),
+        "What is missing: " + (value("missing") || "Nothing added"),
+        "",
+        "PILOT INTEREST",
+        value("serious")
+      ].join("\n");
+    }
+
+    document
+      .getElementById("sendWhatsApp")
+      .addEventListener("click", () => {
+        if (!validateCurrentStep()) {
+          return;
+        }
+
+        const message = buildMessage();
+
+        const url =
+          "https://wa.me/" +
+          WHATSAPP_NUMBER +
+          "?text=" +
+          encodeURIComponent(message);
+
+        window.location.href = url;
+      });
+
+    async function copyForMessenger(text) {
+      if (
+        navigator.clipboard &&
+        window.isSecureContext
+      ) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (error) {
+        }
+      }
+
+      const textarea =
+        document.createElement("textarea");
+
       textarea.value = text;
+      textarea.setAttribute("readonly", "");
       textarea.style.position = "fixed";
+      textarea.style.top = "0";
+      textarea.style.left = "-9999px";
       textarea.style.opacity = "0";
 
       document.body.appendChild(textarea);
+
       textarea.focus();
       textarea.select();
+      textarea.setSelectionRange(
+        0,
+        textarea.value.length
+      );
 
-      const copied = document.execCommand("copy");
+      let copied = false;
+
+      try {
+        copied =
+          document.execCommand("copy");
+      } catch (error) {
+        copied = false;
+      }
 
       document.body.removeChild(textarea);
 
       return copied;
     }
-  }
 
-  document
-    .getElementById("sendMessenger")
-    .addEventListener("click", async () => {
-      if (!validateCurrentStep()) return;
+    document
+      .getElementById("sendMessenger")
+      .addEventListener("click", async () => {
+        if (!validateCurrentStep()) {
+          return;
+        }
 
-      const message = buildMessage();
-      const copied = await copyText(message);
+        const message =
+          buildMessage();
 
-      if (copied) {
+        const copied =
+          await copyForMessenger(message);
+
+        if (!copied) {
+          alert(
+            "Your browser could not copy the answers automatically. Please use WhatsApp instead."
+          );
+          return;
+        }
+
         alert(
-          "Your Pundo answers were copied. Messenger will open next. Paste the message and send it."
+          "Your answers are copied. Tap OK to open Messenger. Then press and hold the message box and tap Paste."
         );
-      } else {
-        alert(
-          "Messenger will open next. Your browser could not copy the answers automatically."
-        );
-      }
 
-      window.location.href = MESSENGER_URL;
-    });
-</script>
+        window.location.href =
+          MESSENGER_URL;
+      });
+  </script>
 
 </body>
 </html>
